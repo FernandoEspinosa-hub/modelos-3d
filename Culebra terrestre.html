@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Conopsis lineata — Culebra terrestre 3D</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79BNQNMDHM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-79BNQNMDHM');
+  </script>
+
+  <!-- Model Viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <style>
+    body { margin: 0; background: #ffffff; font-family: Arial, sans-serif; }
+    #nombre { 
+      position: absolute; top: 20px; left: 20px; 
+      font-size: 26px; font-weight: bold; 
+      background: rgba(255, 255, 255, 0.7); 
+      padding: 5px 10px; border-radius: 5px; 
+    }
+    #marca {
+      position: absolute; bottom: 20px; left: 20px; 
+      font-size: 12px; 
+      background: rgba(255, 255, 255, 0.7); 
+      padding: 3px 6px; border-radius: 5px; 
+    }
+    model-viewer { width: 100%; height: 100vh; }
+    audio { 
+      position: absolute; top: 20px; right: 20px; 
+      background: rgba(255, 255, 255, 0.7); 
+      border-radius: 5px; 
+    }
+  </style>
+</head>
+<body>
+  <div id="nombre"><i>Conopsis lineata</i> — Culebra terrestre</div>
+  <div id="marca">Hecho por: M. en D. Alejandra Sánchez García e Ing. Luis Fernando Espinosa Baltazar</div>
+
+  <!-- Placeholder de audio -->
+  <audio controls>
+    <source src="AUDIO_PENDIENTE.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
+  <!-- Visor 3D -->
+  <model-viewer 
+    src="https://raw.githubusercontent.com/FernandoEspinosa-hub/modelos-3d/main/Culebra%20terrestre.glb" 
+    alt="Culebra terrestre 3D"
+    auto-rotate camera-controls ar
+    shadow-intensity="1">
+  </model-viewer>
+</body>
+</html>
