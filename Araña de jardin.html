@@ -2,8 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Araña de jardin 3D</title>
-
+  <title>Argiope trifasciata – Araña de jardín 3D</title>
   <!-- Google Analytics GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-79BNQNMDHM"></script>
   <script>
@@ -12,44 +11,27 @@
     gtag('js', new Date());
     gtag('config', 'G-79BNQNMDHM');
   </script>
-
-  <!-- Model Viewer -->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
   <style>
     body { margin: 0; background: #f0f0f0; }
-    #nombre-especie {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      background: rgba(255, 255, 255, 0.85);
-      padding: 8px 12px;
-      font-family: Arial, sans-serif;
-      border-radius: 5px;
-      font-weight: bold;
-      z-index: 10;
-    }
-    model-viewer {
-      width: 100vw;
-      height: 100vh;
-    }
+    #nombre-especie { position: absolute; top: 20px; left: 20px; background: rgba(255,255,255,0.85); padding: 8px 12px; font-family: Arial, sans-serif; border-radius: 5px; font-weight: bold; font-size: 22px; z-index: 10; }
+    #marca-agua { position: absolute; bottom: 10px; right: 10px; background: rgba(255,255,255,0.85); padding: 6px 10px; font-family: Arial, sans-serif; font-size: 12px; border-radius: 4px; z-index: 10; }
+    model-viewer { width: 100vw; height: 100vh; }
   </style>
 </head>
 <body>
-  <!-- Nombre de la especie -->
-  <div id="nombre-especie">Araña de jardin</div>
+  <div id="nombre-especie">Argiope trifasciata – Araña de jardín</div>
+  <div id="marca-agua">Hecho por: M. en D. Alejandra Sánchez García y Ing. Luis Fernando Espinosa Baltazar</div>
 
-  <!-- Modelo 3D -->
   <model-viewer
     src="https://raw.githubusercontent.com/FernandoEspinosa-hub/modelos-3d/main/Ara%C3%B1a%20de%20jardin.glb"
-    alt="Araña de jardin 3D"
+    alt="Araña de jardín 3D"
     auto-rotate
     camera-controls
     ar
     shadow-intensity="1">
   </model-viewer>
 
-  <!-- Audio (pendiente, solo actualiza la URL cuando lo tengas) -->
   <audio autoplay loop>
     <source src="URL-DEL-SONIDO.mp3" type="audio/mpeg">
     Tu navegador no soporta audio.
